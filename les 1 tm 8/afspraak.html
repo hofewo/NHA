@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tandartsafspraak</title>
+</head>
+
+<body>
+    <main>
+        <H1>Tandartsafspraak</H1>
+        <p>
+            Welkom bij tandartspraktijk Wong.
+        </p>
+
+        <div>
+            <img src="https://knmt.nl/sites/default/files/platform/styles/hero_w7670/public/2022-05/tandarts-docenten-gezocht.jpg?itok=35M3M00X"
+                alt="Gezonde voeding" width="300">
+
+            <img src="https://knmt.nl/sites/default/files/platform/styles/hero_w7670/public/2022-05/tandarts-docenten-gezocht.jpg?itok=35M3M00X"
+                alt="Gezonde voeding" width="300">
+
+            <img src="https://knmt.nl/sites/default/files/platform/styles/hero_w7670/public/2022-05/tandarts-docenten-gezocht.jpg?itok=35M3M00X"
+                alt="Gezonde voeding" width="300">
+        </div>
+
+        <h2>Afspraak maken</h2>
+        <form method="post" style="display: flex; flex-direction: column; gap: 40px;"
+            action="https://formspree.io/f/mleknzbz">
+            <fieldset>
+                <legend>Persoonlijke gegevens</legend>
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="telefoon">Telefoon:</label>
+                <input type="tel" id="telefoon" name="telefoon"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Beschrijving van de klachten</legend>
+                <input type="checkbox" name="klachten" value="pijn"> <label for="klachten">Pijn</label><br>
+                <input type="checkbox" name="klachten" value="pijn"> <label for="klachten">Ontlasting</label><br>
+                <input type="checkbox" name="klachten" value="pijn"> <label for="klachten">Advies</label><br>
+
+                <p>
+                    <label for="foto">Foto van de klachten:</label><br>
+                    <input type="file" name="foto" id="foto" accept="image/*">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Toelichting van de klachten</legend>
+                <label for="datum">Datum:</label>
+                <input type="date" id="datum" name="datum"><br>
+                <label for="toelichting">Toelichting:</label><br>
+                <textarea name="toelichting" cols="40" rows="5" placeholder="Omschrijving van de klachten"></textarea>
+            </fieldset>
+
+            <button type="submit" value="Verstuur">Verstuur</button>
+        </form>
+    </main>
+</body>
+
+</html>
